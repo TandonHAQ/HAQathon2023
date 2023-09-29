@@ -16,4 +16,4 @@ The optimization algorithms we used are derived from Qiskit's Variational Quantu
 
 Furthermore, we implemented a computer vision model to detect the dimensions of a box given a known measure. Then we use this to calculate the area of the box and using this area determine the weights for each individual item that will be optimized into bins using the bin packing problem.
 
-![Measurement Result](<Measurement\ Result.png>)
+![Measurement Result](MeasurementResult.png)
