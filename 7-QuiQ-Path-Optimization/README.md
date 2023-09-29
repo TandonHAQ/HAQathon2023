@@ -62,3 +62,9 @@ The backend server, which is contained within `/backend` is run through Flask . 
     python3 application.py
 
 > Note: Both the Frontend and Backend server must be running for the web app to run correctly
+
+### Google Maps Key
+The frontend also relies on a .env file that is placed into the root of `/application`. The .env file contains a google maps key that is generated, and look as follows:
+
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY={Your Key}
+
