@@ -3,11 +3,13 @@
 # @brief Implements the PathFinder class, which finds the shortest
 #        path between two nodes in an undirected weighted graph by
 #        solving a QUBO using QAOA.
+# @author Armin Ulrich 
+# @brief Minor debugging changes
 
 # Miscellaneous
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+# import networkx as nx
 import numpy as np
-import networkx as nx
 
 # Qiskit Tools
 from qiskit_optimization import QuadraticProgram
@@ -84,13 +86,13 @@ class PathFinder:
         
         # NOT NECESSARY
         # Must only visit any given vertex once
-        # column_sum = []
-        # for i in range(n):
-        #     for j in range(self.max_hops):
-        #         column_sum.append(bv_mtx[(j, i)])
-        #     clmn_sum_exp = self.cf_mdl.sum(column_sum)
-        #     cf_sum.append(self.penalty * (clmn_sum_exp * (clmn_sum_exp - 1)))
-        #     column_sum.clear()
+        column_sum = []
+        for i in range(n):
+            for j in range(self.max_hops):
+                column_sum.append(bv_mtx[(j, i)])
+            clmn_sum_exp = self.cf_mdl.sum(column_sum)
+            cf_sum.append(self.penalty * (clmn_sum_exp * (clmn_sum_exp - 1)))
+            column_sum.clear()
         
         self.cf_mdl.minimize(self.cf_mdl.sum(cf_sum))
         return from_docplex_mp(self.cf_mdl)

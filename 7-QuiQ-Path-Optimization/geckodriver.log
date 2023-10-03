@@ -1,0 +1,14 @@
+1696104199604	geckodriver	INFO	Listening on 127.0.0.1:51500
+1696104200005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51501" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/zw/xzq_lh4j29954jfp5vrxzkqc0000gn/T/rust_mozprofileXpPfJl"
+1696104205882	Marionette	INFO	Marionette enabled
+1696104205939	Marionette	INFO	Listening on port 51544
+WebDriver BiDi listening on ws://localhost:51501
+Read port: 51544
+1696104206304	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/zw/xzq_lh4j29954jfp5vrxzkqc0000gn/T/rust_mozprofileXpPfJl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51501/devtools/browser/9d439a1c-840b-4143-85eb-5763c721f83e
+JavaScript warning: http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js, line 7: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1696104221808	Marionette	INFO	Stopped listening on port 51544
+1696104342106	geckodriver	INFO	Listening on 127.0.0.1:52294
+1696104342492	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52295" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/zw/xzq_lh4j29954jfp5vrxzkqc0000gn/T/rust_mozprofileiEvRm3"

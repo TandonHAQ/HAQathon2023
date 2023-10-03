@@ -1,5 +1,5 @@
 # QuiQ by Team 7 for NYU Tandon HAQathon, Fall 2023
-![Qpath_optimizer](https://github.com/grid-rider/Qpath_optimizer/assets/131626208/fb3a7af0-836a-4591-bcba-22e939015838)
+![Qpath_optimizer](https://github.com/grid-rider/Qpath_optimizer/blob/dev/media/Deign_Image.png)
 
 
 ## Welcome to Our Project
@@ -44,6 +44,19 @@ Users can use the side panel on the right to view their choice and generate the 
 ### [PathFinder.py](https://github.com/grid-rider/Qpath_optimizer/blob/dev/backend/PathFinder.py)
 "PathFinder.py" imports data structures and maps created by "graph.py" and "map.py" to construct the best path between two points entered by the user. PathFinder is the backbone of the entire backend algorithms as it manages the cost of each vertex using classical computing and utilize quantum computations to return the final result as a list of points.
 
+### Armin Ulrich
+ linkedin: https://www.linkedin.com/in/arminulrich/
+ github: https://github.com/grid-rider
+### Evan Brody
+linkedin: https://www.linkedin.com/in/evan-brody/
+github: https://github.com/brje0
+
+### Xiaoteng (Frank) Liu 
+linkedin: https://www.linkedin.com/in/xiaoteng-frank-liu-95277b232/
+github: https://github.com/lapisliu
+
+### Ninad 
+github: https://github.com/ninadwastaken
 # Running QuiQ
 
 QuiQ relies on a backend and frontend server to run the application. To run the application locally the following steps have to be staken. 
@@ -62,3 +75,10 @@ The backend server, which is contained within `/backend` is run through Flask . 
     python3 application.py
 
 > Note: Both the Frontend and Backend server must be running for the web app to run correctly
+
+### Google Maps Key
+The frontend also relies on a .env file that is placed into the root of `/application`. The .env file contains a google maps key that is generated, and look as follows:
+
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY={Your Key}
+
+
