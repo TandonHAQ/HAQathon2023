@@ -81,4 +81,3 @@ The frontend also relies on a .env file that is placed into the root of `/applic
 
     NEXT_PUBLIC_GOOGLE_MAPS_API_KEY={Your Key}
 
-
